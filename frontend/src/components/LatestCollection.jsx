@@ -1,10 +1,8 @@
 import React from 'react'
-import { useState } from 'react'
-import { useContext } from 'react'
-import { useEffect } from 'react'
-import Productitem from './Productitem.jsx'
+import { useState, useContext, useEffect } from "react";
 import { ShopContext } from '../context/ShopContext.jsx'
 import Title from './Title.jsx'
+import Productitem from './Productitem.jsx'
 
 const LatestCollection = () => {
 
