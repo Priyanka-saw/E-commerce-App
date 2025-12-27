@@ -1,6 +1,14 @@
 import React from "react";
 
 const NewsletterBox = () => {
+
+    const onSubmitHandler = (event) => {
+        
+        // it will not reload the newletter page
+        event.preventDefault();
+
+    }
+
   return (
     <div className="text-center">
       <p className="text-2xl font-medium text-gray-800">
@@ -10,7 +18,7 @@ const NewsletterBox = () => {
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime typesetting industry.
         </p>
         
-        <form className="w-full sm:w-1/2 mx-auto flex item-center border gap-3 my-6 border pl-3">
+        <form onSubmit={onSubmitHandler} className="w-full sm:w-1/2 mx-auto flex item-center border gap-3 my-6 border pl-3">
             <input className="w-full sm:flex-1 outline-none" type="email" placeholder='Enter your Email' required  />
             <button type="submit" className="bg-black text-white text-xs px-10 py-4">SUBSCRIBE</button>
         </form>
